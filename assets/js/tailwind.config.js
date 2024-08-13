@@ -5,7 +5,7 @@ tailwind.config = {
                 'light-blue': '#00BFFF',
                 'blue': '#00A4FF',
                 'green': '#01D61B',
-                'light-black': '#29333A',
+                'off-black': '#29333A',
             },
             fontSize: {
                 'custom-sm': '19px',
@@ -27,8 +27,9 @@ tailwind.config = {
                 '150': '150%',
             },
             boxShadow: {
-                "start_button": "0px 4px 25px 0px #00BFFF",
+                "common_shadow": "0px 4px 25px 0px #00BFFF",
                 "heading": "0px 1.33px 33.3px 0px #FFFFFF",
+
 
             },
 

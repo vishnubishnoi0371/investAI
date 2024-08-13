@@ -23,7 +23,7 @@ document.getElementById('playIcon').addEventListener('click', () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const playIcons = document.querySelectorAll('.play-icon');
+    const playIcons = document.querySelectorAll('.pause-icon');
     let currentPlayingVideo = null;
 
     playIcons.forEach(playIcon => {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (currentPlayingVideo && currentPlayingVideo !== videoElement) {
                 currentPlayingVideo.pause();
                 currentPlayingVideo.currentTime = 0;
-                currentPlayingVideo.parentElement.querySelector('.play-icon').style.display = 'block';
+                currentPlayingVideo.parentElement.querySelector('.pause-icon').style.display = 'block';
             }
 
             if (videoElement.paused) {

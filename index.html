@@ -32,7 +32,13 @@
 </head>
 
 <body>
-    <header>
+    <header class="relative">
+        <span class="absolute top-10 cursor-pointer left-10"><svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0.400133 2.73102V0.733019H13.7921V2.73102H0.400133ZM0.400133 6.83502V4.83702H13.7921V6.83502H0.400133ZM0.400133 10.939V8.94102H13.7921V10.939H0.400133Z"
+                    fill="white" />
+            </svg>
+        </span>
         <div class="header_bg bg-center bg-cover bg-norepeat h-full">
             <div class="container px-4 lg:px-3 mx-auto pt-4 md:pt-5">
                 <div class="relative">
@@ -55,14 +61,16 @@
                             class="text-center font-normal text-xl lg:text-2xl leading-117 mb-5 mx-auto max-w-[1100px] text-white font-roboto">
                             Watch Your Investment Skyrocket Effortlessly with a Simple AI System that Capitalizes on
                             Price Differences! Investors Have Seen a Remarkable <span
-                                class="font-semibold text-blue">36.5%+ </span> Gains in Less Than 24 Hours!
+                                class="font-semibold text-blue">36.5%+ </span> Gains in Less Than 24 Hours! <br
+                                class="hidden lg:block" />
                             Watch the Video Below to Discover How</p>
 
                     </div>
                 </div>
 
                 <div class="flex justify-center relative">
-                    <video id="diligenceVideo" class="rounded-md lg:rounded-[24px] max-w-[982px] w-full max-h-[553px]"
+                    <video id="diligenceVideo"
+                        class="rounded-md shadow-common_shadow lg:rounded-[24px] max-w-[982px] w-full max-h-[553px]"
                         src="./assets/videos/buildings.mp4" controls
                         poster="./assets/images/webp/video-poster.webp"></video>
                     <span id="playIcon" class="cursor-pointer top-[45%] leaf-[45%] absolute">
@@ -75,9 +83,8 @@
                         </svg>
                     </span>
                 </div>
-
                 <a href="#"
-                    class="py-3 px-7 shadow-start_button 2xl:h-[100px] flex flex-col justify-center items-center hover:shadow-none duration-300 flex flex-col mx-auto max-w-[470px] rounded-full text-white border font-bold font-oxygen text-lg lg:text-custom-lg bg-blue mt-9 border-light-blue bg-opacity-[24%] ">
+                    class="py-3 px-7 shadow-common_shadow 2xl:h-[100px] flex flex-col justify-center items-center hover:shadow-none duration-300 flex flex-col mx-auto xl:h-[100px] max-w-[470px] rounded-full text-white border font-bold font-oxygen text-lg lg:text-custom-lg bg-blue mt-9 border-light-blue bg-opacity-[24%] ">
                     <span class="flex items-center gap-3"><span><svg class="size-5 lg:size-7" viewBox="0 0 28 29"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -92,7 +99,7 @@
 
                 </a>
                 <p
-                    class="text-lg md:text-xl flex items-start text-white text-center mx-auto font-roboto font-normal max-w-[1080px] leading-140 mt-11 mb-8 md:mb-10 lg:mb-12">
+                    class="text-lg md:text-xl flex items-start text-white text-center mx-auto font-roboto font-normal max-w-[1088px] leading-140 mt-11 mb-8 md:mb-10 lg:mb-12">
                     <span><svg width="21" height="16" viewBox="0 0 21 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -188,7 +195,7 @@
 
                     </div>
                     <button
-                        class="rounded-full shadow-start_button hover:shadow-none duration-300 py-3 px-6 max-w-[236px] flex bg-blue mt-1 mb-16 md:mb-20 lg:mb-[97px] bg-opacity-[24%] border-light-blue items-center gap-4 mx-auto border border-solid font-bold text-center text-white text-xl lg:text-2xl leading-140">Get
+                        class="rounded-full shadow-common_shadow hover:shadow-none duration-300 py-3 px-6 max-w-[236px] flex bg-blue mt-1 mb-16 md:mb-20 lg:mb-[97px] bg-opacity-[24%] border-light-blue items-center gap-4 mx-auto border border-solid font-bold text-center text-white text-xl lg:text-2xl leading-140">Get
                         Started! <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -216,93 +223,87 @@
                 in the
                 lives of many canadian families.</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-4 md:gap-y-8">
-                <div>
-                    <div class="max-w-[362px] bg-light-black rounded-lg">
+                    <div class="max-w-[362px] bg-off-black rounded-lg">
                         <div class="relative video-wrapper" id="video-wrapper1">
-                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 play-icon"
+                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 pause-icon"
                                 src="./assets/images/svg/video-play-icon.svg" alt="video-play-icon"
                                 data-video-id="video1">
-                            <video id="video1" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
-                                poster="./assets/images/webp/melani.webp" src="./assets/videos/buildings.mp4"></video>
+                            <video id="video1" controls class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
+                                poster="./assets/images/webp/melani.webp" src="./assets/videos/hana-speaking.mp4"></video>
                         </div>
-                        <p class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
+                        <p
+                            class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
                             MELANI FROM TORONTO</p>
                     </div>
-                </div>
-                <div>
-                    <div class="max-w-[362px] bg-light-black rounded-lg">
+                    <div class="max-w-[362px] bg-off-black rounded-lg">
                         <div class="relative video-wrapper" id="video-wrapper2">
-                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 play-icon"
+                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 pause-icon"
                                 src="./assets/images/svg/video-play-icon.svg" alt="video-play-icon"
                                 data-video-id="video2">
-                            <video id="video2" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
-                                poster="./assets/images/webp/alex.webp" src="./assets/videos/buildings.mp4"></video>
+                            <video id="video2" controls class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
+                                poster="./assets/images/webp/alex.webp" src="./assets/videos/alex-speaking.mp4"></video>
                         </div>
-                        <p class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
+                        <p
+                            class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
                             ALEX FROM HAMILTON</p>
                     </div>
-                </div>
-                <div>
-                    <div class="max-w-[362px] bg-light-black rounded-lg">
+                    <div class="max-w-[362px] bg-off-black rounded-lg">
                         <div class="relative video-wrapper" id="video-wrapper3">
-                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 play-icon"
+                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 pause-icon"
                                 src="./assets/images/svg/video-play-icon.svg" alt="video-play-icon"
                                 data-video-id="video3">
-                            <video id="video3" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
-                                poster="./assets/images/webp/lilly.webp" src="./assets/videos/buildings.mp4"></video>
+                            <video id="video3" controls class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
+                                poster="./assets/images/webp/lilly.webp" src="./assets/videos/sam-speaking.mp4"></video>
                         </div>
-                        <p class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
+                        <p
+                            class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
                             LILLY FROM MONTREAL</p>
                     </div>
-                </div>
-                <div>
-                    <div class="max-w-[362px] bg-light-black rounded-lg">
+                    <div class="max-w-[362px] bg-off-black rounded-lg">
                         <div class="relative video-wrapper" id="video-wrapper4">
-                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 play-icon"
+                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 pause-icon"
                                 src="./assets/images/svg/video-play-icon.svg" alt="video-play-icon"
                                 data-video-id="video4">
-                            <video id="video4" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
-                                poster="./assets/images/webp/hana.webp" src="./assets/videos/buildings.mp4"></video>
+                            <video id="video4" controls class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
+                                poster="./assets/images/webp/hana.webp" src="./assets/videos/hana-speaking.mp4"></video>
                         </div>
-                        <p class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
+                        <p
+                            class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
                             Hana FROM toronto</p>
                     </div>
-                </div>
-                <div>
-                    <div class="max-w-[362px] bg-light-black rounded-lg">
+                    <div class="max-w-[362px] bg-off-black rounded-lg">
                         <div class="relative video-wrapper" id="video-wrapper5">
-                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 play-icon"
+                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 pause-icon"
                                 src="./assets/images/svg/video-play-icon.svg" alt="video-play-icon"
                                 data-video-id="video5">
-                            <video id="video5" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
+                            <video id="video5" controls class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
                                 poster="./assets/images/webp/alex-brampton.webp"
-                                src="./assets/videos/buildings.mp4"></video>
+                                src="./assets/videos/alex-speaking.mp4"></video>
                         </div>
-                        <p class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
+                        <p
+                            class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
                             Alex FROM brampton</p>
                     </div>
-                </div>
-                <div>
-                    <div class="max-w-[362px] bg-light-black rounded-lg">
+                    <div class="max-w-[362px] bg-off-black rounded-lg">
                         <div class="relative video-wrapper" id="video-wrapper6">
-                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 play-icon"
+                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 pause-icon"
                                 src="./assets/images/svg/video-play-icon.svg" alt="video-play-icon"
                                 data-video-id="video6">
-                            <video id="video6" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
-                                poster="./assets/images/webp/sam.webp" src="./assets/videos/buildings.mp4"></video>
+                            <video id="video6" controls class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
+                                poster="./assets/images/webp/sam.webp" src="./assets/videos/sam-speaking.mp4"></video>
                         </div>
-                        <p class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
+                        <p
+                            class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
                             Sam FROM markham</p>
                     </div>
-                </div>
             </div>
 
         </div>
     </section>
-   
+
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/tailwind.config.js"></script>
-  
+
 </body>
 
 </html>
