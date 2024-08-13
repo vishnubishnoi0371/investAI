@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <header class="">
+    <header>
         <div class="header_bg bg-center bg-cover bg-norepeat h-full">
             <div class="container px-4 lg:px-3 mx-auto pt-4 md:pt-5">
                 <div class="relative">
@@ -225,7 +225,7 @@
                             <video id="video1" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
                                 poster="./assets/images/webp/melani.webp" src="./assets/videos/buildings.mp4"></video>
                         </div>
-                        <p class="text-base font-semibold font-roboto text-white pt-5 pb-4 text-center">
+                        <p class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
                             MELANI FROM TORONTO</p>
                     </div>
                 </div>
@@ -238,8 +238,8 @@
                             <video id="video2" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
                                 poster="./assets/images/webp/alex.webp" src="./assets/videos/buildings.mp4"></video>
                         </div>
-                        <p class="text-base font-semibold font-roboto text-white pt-5 pb-4 text-center">
-                            MELANI FROM TORONTO</p>
+                        <p class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
+                            ALEX FROM HAMILTON</p>
                     </div>
                 </div>
                 <div>
@@ -251,8 +251,8 @@
                             <video id="video3" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
                                 poster="./assets/images/webp/lilly.webp" src="./assets/videos/buildings.mp4"></video>
                         </div>
-                        <p class="text-base font-semibold font-roboto text-white pt-5 pb-4 text-center">
-                            MELANI FROM TORONTO</p>
+                        <p class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
+                            LILLY FROM MONTREAL</p>
                     </div>
                 </div>
                 <div>
@@ -264,8 +264,8 @@
                             <video id="video4" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
                                 poster="./assets/images/webp/hana.webp" src="./assets/videos/buildings.mp4"></video>
                         </div>
-                        <p class="text-base font-semibold font-roboto text-white pt-5 pb-4 text-center">
-                            MELANI FROM TORONTO</p>
+                        <p class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
+                            Hana FROM toronto</p>
                     </div>
                 </div>
                 <div>
@@ -278,8 +278,8 @@
                                 poster="./assets/images/webp/alex-brampton.webp"
                                 src="./assets/videos/buildings.mp4"></video>
                         </div>
-                        <p class="text-base font-semibold font-roboto text-white pt-5 pb-4 text-center">
-                            MELANI FROM TORONTO</p>
+                        <p class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
+                            Alex FROM brampton</p>
                     </div>
                 </div>
                 <div>
@@ -291,111 +291,18 @@
                             <video id="video6" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
                                 poster="./assets/images/webp/sam.webp" src="./assets/videos/buildings.mp4"></video>
                         </div>
-                        <p class="text-base font-semibold font-roboto text-white pt-5 pb-4 text-center">
-                            MELANI FROM TORONTO</p>
+                        <p class="text-xs md:text-base font-semibold font-roboto text-white capitalize leading-130 pt-5 pb-4 text-center">
+                            Sam FROM markham</p>
                     </div>
                 </div>
             </div>
 
         </div>
     </section>
-    <script>
-        function playVideo(videoId, button) {
-            const video = document.getElementById(videoId);
-            video.play();
-            button.style.display = 'none';
-
-            video.addEventListener('play', () => {
-                video.controls = true;
-            });
-
-            video.addEventListener('pause', () => {
-                video.controls = false;
-                button.style.display = 'block';
-            });
-
-            video.addEventListener('ended', () => {
-                video.controls = false;
-                button.style.display = 'block';
-            });
-        }
-
-        document.getElementById('playIcon').addEventListener('click', () => {
-            playVideo('diligenceVideo', document.getElementById('playIcon'));
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const playIcons = document.querySelectorAll('.play-icon');
-            let currentPlayingVideo = null;
-
-            playIcons.forEach(playIcon => {
-                playIcon.addEventListener('click', function () {
-                    const videoId = this.getAttribute('data-video-id');
-                    const videoElement = document.getElementById(videoId);
-
-                    if (currentPlayingVideo && currentPlayingVideo !== videoElement) {
-                        currentPlayingVideo.pause();
-                        currentPlayingVideo.currentTime = 0;
-                        currentPlayingVideo.parentElement.querySelector('.play-icon').style.display = 'block';
-                    }
-
-                    if (videoElement.paused) {
-                        videoElement.play();
-                        this.style.display = 'none';
-                        currentPlayingVideo = videoElement;
-                    } else {
-                        videoElement.pause();
-                        videoElement.currentTime = 0;
-                        this.style.display = 'block';
-                        currentPlayingVideo = null;
-                    }
-                });
-            });
-        });
-
-    </script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'light-blue': '#00BFFF',
-                        'blue': '#00A4FF',
-                        'green': '#01D61B',
-                        'light-black': '#29333A',
-                    },
-                    fontSize: {
-                        'custom-sm': '19px',
-                        'custom-md': '22px',
-                        'custom-lg': '28px',
-                        'custom-5xl': '50px',
-                    },
-                    fontFamily: {
-                        'roboto': ['Roboto', 'sans-serif'],
-                        'oxygen': ['Oxygen', 'sans-serif'],
-                        'oxanium': ['Oxanium', 'sans-serif'],
-                    },
-                    lineHeight: {
-                        '117': '117%',
-                        '120': '120%',
-                        '127': '127%',
-                        '140': '140%',
-                        '150': '150%',
-                    },
-                    boxShadow: {
-                        "start_button": "0px 4px 25px 0px #00BFFF",
-                        "heading": "0px 1.33px 33.3px 0px #FFFFFF",
-
-                    },
-
-
-
-                }
-            },
-        };
-
-    </script>
+   
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/tailwind.config.js"></script>
+  
 </body>
 
 </html>
