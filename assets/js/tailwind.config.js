@@ -17,6 +17,7 @@ tailwind.config = {
                 'roboto': ['Roboto', 'sans-serif'],
                 'oxygen': ['Oxygen', 'sans-serif'],
                 'oxanium': ['Oxanium', 'sans-serif'],
+                'lato': ['lato', 'sans-serif'],
             },
             lineHeight: {
                 '117': '117%',
@@ -29,8 +30,6 @@ tailwind.config = {
             boxShadow: {
                 "common_shadow": "0px 4px 25px 0px #00BFFF",
                 "heading": "0px 1.33px 33.3px 0px #FFFFFF",
-
-
             },
 
 
