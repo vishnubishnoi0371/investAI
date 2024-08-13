@@ -1,8 +1,13 @@
 .header_bg{
-    background-image: url('../images/webp/header-bg.png');
+    background-image: url('../images/webp/header-bg.webp');
 }
 .blue_textshadow {
     text-shadow: 0px 4px 4px #00000040, 0px 0px 20px #00bfff, 0px 0px 20px #00bfff,
       0px 0px 0px #00bfff, 0px 0px 0px #00bfff, 0px 1px 0px #00bfff,
       0px 1px 0px #00bfff;
+  }
+.white_textshadow {
+    text-shadow: 0px 4px 4px #00000040, 0px 0px 20px #fff, 0px 0px 20px #fff,
+      0px 0px 0px #fff, 0px 0px 0px #fff, 0px 1px 0px #fff,
+      0px 1px 0px #fff;
   }
