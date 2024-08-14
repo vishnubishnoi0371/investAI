@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oxanium:wght@200..800&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-.header_bg{
-    background-image: url('../images/webp/header-bg.webp');
+
+.header_bg {
+  background-image: url('../images/webp/header-bg.webp');
 }
+
 .blue_textshadow {
-    text-shadow: 0px 4px 4px #00000040, 0px 0px 20px #00bfff, 0px 0px 20px #00bfff,
-      0px 0px 0px #00bfff, 0px 0px 0px #00bfff, 0px 1px 0px #00bfff,
-      0px 1px 0px #00bfff;
-  }
+  text-shadow: 0px 4px 4px #00000040, 0px 0px 20px #00bfff, 0px 0px 20px #00bfff,
+    0px 0px 0px #00bfff, 0px 0px 0px #00bfff, 0px 1px 0px #00bfff,
+    0px 1px 0px #00bfff;
+}
+
 .white_textshadow {
-    text-shadow: 0px 4px 4px #00000040, 0px 0px 20px #fff, 0px 0px 20px #fff,
-      0px 0px 0px #fff, 0px 0px 0px #fff, 0px 1px 0px #fff,
-      0px 1px 0px #fff;
-  }
-  
+  text-shadow: 0px 4px 4px #00000040, 0px 0px 20px #fff, 0px 0px 20px #fff,
+    0px 0px 0px #fff, 0px 0px 0px #fff, 0px 1px 0px #fff,
+    0px 1px 0px #fff;
+}
+
 #caart-tabs::-webkit-scrollbar {
   display: none !important;
 }
@@ -27,10 +30,60 @@
   width: 6px !important;
 }
 
-
-/* Track */
-
 ::-webkit-scrollbar-track {
   background-color: #000;
   border-radius: 21px;
 }
+
+/* ===========PARTICLE JS============= */
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  background-color: #15161b;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+ 
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
